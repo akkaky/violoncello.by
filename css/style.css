@@ -1,0 +1,175 @@
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: #fff8f1;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-top: 60px;
+}
+
+h1, h2, h3 {
+    color: #fff8f1;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    /*text-decoration: underline;*/
+}
+
+a {
+    color: #ffb14e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffc689;
+}
+
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffb14e;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 0;
+}
+
+.hero img {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero p {
+    font-size: 70px;
+}
+
+.contacts, .location {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffb14e;
+    margin-top: 10px;
+}
+
+.bold {
+    font-weight: bold;
+    color: #ffd09c;
+}
+
+/* Menu styles */
+.menu {
+    display: flex; /* Horizontal alignment */
+    justify-content: center; /* Center items */
+    background-color: #1a1a1a; /* Dark background for the menu */
+    padding: 15px 0; /* Space around the menu items */
+    position: fixed; /* Sticks the menu to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures menu stays on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+}
+
+.menu a {
+    text-decoration: none; /* Remove underline */
+    color: #ffb14e; /* Gold color for links */
+    font-weight: bold; /* Bold text */
+    font-size: 1.1rem; /* Slightly larger font */
+    padding: 10px 20px; /* Space around links */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    border: #ffb14e solid 1px;
+}
+
+.menu a:hover {
+    background-color: #ffb14e; /* Gold background on hover */
+    color: #1a1a1a; /* Dark text on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.menu a:active {
+    transform: scale(1); /* Reset scale when clicked */
+}
+
+/* Spoiler Styles */
+.spoiler {
+    margin-top: 20px;
+    /*background-color: #1a1a1a;*/
+    text-align: center;
+}
+
+.spoiler button {
+    background-color: #ffb14e; /* Золотой фон для кнопки */
+    border: none;
+    color: #1f1f1f; /* Темный текст */
+    padding: 10px 20px;
+    margin: 90px auto 40px;
+    font-size: 1rem;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.spoiler button:hover {
+    background-color: #ffb14e; /* Темнее при наведении */
+}
+
+.spoiler-details {
+    text-align: start;
+    max-height: 0; /* Start with height 0 to hide content */
+    overflow: hidden; /* Hide overflowing content */
+    transition: max-height 0.5s ease-out; /* Smooth transition */
+}
+
+.spoiler-details.open {
+    max-height: 2500px; /* Arbitrary large height to ensure full visibility */
+}
+
+footer {
+    background-color: #1a1a1a;
+    font-style: normal;
+    /*font-size: 1rem;*/
+    padding: 90px;
+    text-align: center;
+}
+
+.unp {
+    font-size: 1rem;
+}
