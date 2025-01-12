@@ -91,6 +91,7 @@ section img {
 .hero {
     text-align: center;
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 .hero img {
@@ -325,6 +326,13 @@ footer {
 
     footer {
         padding: 50px 10px; /* Змяненне адступаў у падвале */
+    }
+
+    #video {
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .menu-links {
