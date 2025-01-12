@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 behavior: 'smooth' // Smooth scrolling
             });
 
-            let x = window.matchMedia("(max-width: 480px)")
+            let x = window.matchMedia("(max-width: 620px)")
             if (x.matches) { // If media query matches
                 menuLinks.classList.toggle("active")
             }
