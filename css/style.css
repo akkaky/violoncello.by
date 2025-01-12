@@ -134,7 +134,7 @@ section img {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensures menu stays on top */
+    z-index: 9; /* Ensures menu stays on top */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
 }
 
@@ -230,10 +230,11 @@ footer {
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 20px;
     width: 42px;
+    z-index: 10;
 }
 
 /* Адаптыўныя стылі */
