@@ -356,11 +356,13 @@ footer {
         float: none;
         margin-left: auto;
         margin-right: auto;
+        display: block;
     }
 
     .imgleft {
         float: none;
         margin-left: auto;
         margin-right: auto;
+        display: block;
     }
 }
