@@ -19,10 +19,14 @@ h1, h2, h3 {
     color: #fff8f1;
 }
 
+nav {
+    display: flex;
+    gap: 15px;
+}
+
 nav a {
     color: #ffd700;
     text-decoration: none;
-    margin-right: 15px;
 }
 
 nav a:hover {
@@ -59,6 +63,31 @@ section p {
     font-size: 25px;
 }
 
+section img {
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 0;
+}
+
+.small {
+    width: 200px;
+}
+
+.imgcenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.imgright {
+    float: right;
+}
+
+.imgleft {
+    float: left;
+}
+
 .hero {
     text-align: center;
     padding-top: 0;
@@ -69,7 +98,7 @@ section p {
     margin: 0 auto;
 }
 
-.hero p {
+.hero .big {
     font-size: 70px;
 }
 
@@ -88,6 +117,10 @@ section p {
 .bold {
     font-weight: bold;
     color: #ffd09c;
+}
+
+.messenger img {
+    width: 120px;
 }
 
 /* Menu styles */
@@ -159,7 +192,18 @@ section p {
 }
 
 .spoiler-details.open {
-    max-height: 2500px; /* Arbitrary large height to ensure full visibility */
+    max-height: 3500px; /* Arbitrary large height to ensure full visibility */
+}
+
+.messengers {
+    display: flex;
+    gap: 15px;
+    justify-content: center
+}
+
+.messenger {
+    border: 1px solid #ffb14e;
+    cursor: pointer;
 }
 
 footer {
@@ -172,4 +216,135 @@ footer {
 
 .unp {
     font-size: 1rem;
+}
+
+/* Burger menu */
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffb14e;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 42px;
+}
+
+/* Адаптыўныя стылі */
+@media (max-width: 1200px) {
+    body {
+        font-size: 22px; /* Зменшаны памер шрыфта */
+    }
+
+    .menu a {
+        font-size: 1rem; /* Зменшаны памер шрыфта ў меню */
+        padding: 8px 15px; /* Меншыя адступы ў пунктах меню */
+    }
+
+    section {
+        padding: 40px 15px; /* Зменшаны адступы ўнутры блокаў */
+    }
+
+    section p {
+        font-size: 22px;
+    }
+
+    .hero .big {
+        font-size: 60px; /* Меншы памер загалоўкаў */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Планшэты */
+    .menu {
+        flex-wrap: wrap; /* Перанос пунктаў меню на новую лінію */
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        margin: 5px 0; /* Памяншэнне адлегласці паміж элементамі */
+    }
+
+    .hero img {
+        max-width: 90%; /* Змяненне шырыні выявы */
+    }
+
+    section {
+        padding: 30px 10px; /* Змяншэнне адступаў унутры секцый */
+    }
+
+    .hero .big {
+        font-size: 50px; /* Памяншэнне загалоўкаў */
+    }
+}
+
+@media (max-width: 620px) {
+    /* Мабільныя прылады */
+    .menu {
+        flex-direction: column; /* Вертыкальная арыентацыя меню */
+        align-items: center; /* Цэнтраванне пунктаў меню */
+    }
+
+    .menu a {
+        font-size: 0.8rem;
+        padding: 10px;
+        width: 90%; /* Запаўненне шырыні экрана */
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        font-size: 18px; /* Меншы памер шрыфта для мабільных */
+    }
+
+    section p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 20px 10px;
+        margin: 10px auto;
+    }
+
+    section img {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero .big {
+        font-size: 40px; /* Яшчэ меншы памер для загалоўкаў */
+    }
+
+    footer {
+        padding: 50px 10px; /* Змяненне адступаў у падвале */
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        padding: 15px 0;
+    }
+
+    .menu-links.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+        width: 20%;
+        margin-left: auto;
+    }
 }
