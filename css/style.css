@@ -347,4 +347,20 @@ footer {
         width: 20%;
         margin-left: auto;
     }
+
+    .messenger img {
+        width: 90px;
+    }
+
+    .imgright {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgleft {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
