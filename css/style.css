@@ -48,7 +48,7 @@ section {
     max-width: 1200px;
 }
 
-section h1 {
+section h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #ffb14e;
@@ -101,6 +101,9 @@ section img {
 
 .hero .big {
     font-size: 70px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contacts, .location {
@@ -237,19 +240,18 @@ footer {
     z-index: 10;
 }
 
-/* Адаптыўныя стылі */
 @media (max-width: 1200px) {
     body {
-        font-size: 22px; /* Зменшаны памер шрыфта */
+        font-size: 22px;
     }
 
     .menu a {
-        font-size: 1rem; /* Зменшаны памер шрыфта ў меню */
-        padding: 8px 15px; /* Меншыя адступы ў пунктах меню */
+        font-size: 1rem;
+        padding: 8px 15px;
     }
 
     section {
-        padding: 40px 15px; /* Зменшаны адступы ўнутры блокаў */
+        padding: 40px 15px;
     }
 
     section p {
@@ -257,7 +259,8 @@ footer {
     }
 
     .hero .big {
-        font-size: 60px; /* Меншы памер загалоўкаў */
+        font-size: 60px;
+        max-width: 630px;
     }
 }
 
@@ -286,24 +289,24 @@ footer {
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 767px) {
     /* Мабільныя прылады */
     .menu {
-        flex-direction: column; /* Вертыкальная арыентацыя меню */
-        align-items: center; /* Цэнтраванне пунктаў меню */
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu a {
         font-size: 0.8rem;
         padding: 10px;
-        width: 90%; /* Запаўненне шырыні экрана */
+        width: 90%;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
 
     body {
-        font-size: 18px; /* Меншы памер шрыфта для мабільных */
+        font-size: 18px;
     }
 
     section p {
@@ -322,11 +325,12 @@ footer {
     }
 
     .hero .big {
-        font-size: 40px; /* Яшчэ меншы памер для загалоўкаў */
+        font-size: 40px;
+        max-width: 430px;
     }
 
     footer {
-        padding: 50px 10px; /* Змяненне адступаў у падвале */
+        padding: 50px 10px;
     }
 
     #video {
