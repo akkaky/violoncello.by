@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: #000;
+    background-color: #3e2000;
     color: #fff8f1;
     margin: 0;
     font-family: "Playfair Display", serif;
@@ -131,7 +131,7 @@ section img {
 .menu {
     display: flex; /* Horizontal alignment */
     justify-content: center; /* Center items */
-    background-color: #1a1a1a; /* Dark background for the menu */
+    background-color: #2b1d02; /* Dark background for the menu */
     padding: 15px 0; /* Space around the menu items */
     position: fixed; /* Sticks the menu to the top */
     top: 0;
@@ -211,7 +211,7 @@ section img {
 }
 
 footer {
-    background-color: #1a1a1a;
+    background-color: #2b1d02;
     font-style: normal;
     /*font-size: 1rem;*/
     padding: 90px;
