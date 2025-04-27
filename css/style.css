@@ -127,6 +127,11 @@ section img {
     width: 120px;
 }
 
+.block {
+    display: flex;
+    align-items: center;
+}
+
 /* Menu styles */
 .menu {
     display: flex; /* Horizontal alignment */
@@ -381,5 +386,9 @@ footer {
 
     .imgcenter {
         width: 50%;
+    }
+
+    .block {
+        flex-direction: column;
     }
 }

@@ -1,5 +1,5 @@
-function toggleSpoiler() {
-    const spoilerContent = document.getElementById('spoiler-content');
+function toggleSpoiler(id) {
+    const spoilerContent = document.getElementById(id);
     spoilerContent.classList.toggle('open'); // Toggle the 'open' class
 }
 
