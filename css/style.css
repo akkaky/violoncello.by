@@ -245,6 +245,13 @@ footer {
     z-index: 10;
 }
 
+#excluded-service {
+    h2 {
+        font-size: 16px;
+    }
+    font-size: 16px;
+}
+
 @media (max-width: 1200px) {
     body {
         font-size: 22px;
@@ -266,6 +273,13 @@ footer {
     .hero .big {
         font-size: 60px;
         max-width: 630px;
+    }
+
+    #excluded-service {
+        h2 {
+            font-size: 13px;
+        }
+        font-size: 13px;
     }
 }
 
@@ -291,6 +305,13 @@ footer {
 
     .hero .big {
         font-size: 50px; /* Памяншэнне загалоўкаў */
+    }
+
+    #excluded-service {
+        h2 {
+            font-size: 13px;
+        }
+        font-size: 13px;
     }
 }
 
@@ -390,5 +411,12 @@ footer {
 
     .block {
         flex-direction: column;
+    }
+
+    #excluded-service {
+        h2 {
+            font-size: 11px;
+        }
+        font-size: 11px;
     }
 }
